@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2f68d3fcc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">   
+    <title>The code review</title>
+</head>
+<body>
+
+
+    <header>
+        <h1 class="title">the code review</h1>
+    </header>
+
+
+    <main>
+        <section class="newsletter">
+            <h2 class="newsletter-title">Signup for our newsletter</h2>
+            <p class="newsletter-p">Get the latest news on how your code is doing right in your inbox</p>
+        </section>
+        <form action="index.html" method="post" class="form-class">
+
+                <hr class="first-line">
+                <hr class="second-line">
+                <div class="contact-section">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+
+                        <div class="bigger-screen">
+                            <label for="fullname">Full name</label>
+                            <input type="text" name="user_fullname" id="fullname" required placeholder="Required">
+                        </div>
+
+                        <div class="bigger-screen">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="user_email" id="email" required placeholder="Required">
+                        </div>
+
+                        <div class="bigger-screen">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="user_phone" id="phone" placeholder="(+39) 123 1234 123">
+                        </div>
+
+                        <div class="bigger-screen">
+                            <label for="address">Street Address</label>
+                            <input type="text" name="user_address" id="address" placeholder="580 Whiff Oaf Lane">
+                        </div>
+
+                        <div class="bigger-screen">
+                            <label for="city">City</label>
+                            <input type="text" name="user_city" id="city" placeholder="Richmond">
+                        </div>
+
+                        <div class="bigger-screen">
+                            <label for="state">State</label>
+                                <select name="user_state" id="state">
+                                    
+                                        <option value="" disabled selected>Choose State</option>
+                                        <option value="italy">Italy</option>
+                                        <option value="spain">Spain</option>
+                                        <option value="usa">Usa</option>
+                                        <option value="china">China</option>
+                                </select>
+                        </div>
+
+                        <div class="bigger-screen">
+                            <label for="zip">Zip Code</label>    
+                            <div class="zip-container">                
+                            <input type="text" name="user_zip" id="zip" placeholder="31324">
+                        </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <hr class="second-line">
+
+                <fieldset class="newsletter-section">
+                    
+                    <legend>Newsletter</legend>
+                    
+                
+                    <h3 class="newsletter_type line-height">Select the newsletter you would like to receive</h3>
+
+                    <div class="checkboxes">
+                        <label for="newsletter_news"><input type="checkbox" name="user_newsletter_news" id="newsletter_news" required checked><span>HTML News</span></label>
+                        <label for="css_news"><input type="checkbox" name="user_css_news" id="css_news" required><span>CSS News</span></label>
+                        <label for="javascript_news"><input type="checkbox" name="user_javascript_news" id="javascript_news" required><span>Javascript News</span></label>
+                    </div>
+
+                    <h3 class="newsletter_format">Newsletter format</h3>
+                    <div class="checkboxes">
+                        <label for="html_format"><input type="radio" name="user_html_format" id="html_format" value="html_format" checked><span>HTML</span></label>
+                        <label for="plain_text_format"><input type="radio" name="user_plain_text_format" id="plain_text_format" value="plain_text_format"><span>Plain text</span></label>
+                    </div>
+                    
+                    <label for="suggestion" class="line-height">Other topic you'd like to hear about</label>
+                    <textarea name="user_suggestion" id="suggestion" cols="1" rows="4" placeholder="Enter your comment here"></textarea>
+                
+
+                </fieldset>
+                
+
+
+                <button type="submit" class="submit">Sign Up</button>
+        </form>  
+    </main>
+
+
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+
+
+</body>
+</html>

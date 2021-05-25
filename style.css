@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/*-----------------------------------------heading-------------------------------------------------------------*/
+
+.title{
+    background-color: rgb(50, 56, 80);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    color: aliceblue;
+}
+
+
+/*-----------------------------------------form heading-------------------------------------------------------------*/
+.newsletter{
+    padding: 0 0 2rem;
+    margin: 1.5rem;
+    background-color: rgb(97, 194, 186);
+}
+
+.newsletter::after{
+    border-bottom: 3px solid rgb(50, 56, 80);
+}
+
+.newsletter-title{
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.5rem 0 .5rem;
+    color: rgb(255, 255, 255);
+}
+.newsletter-p{
+    font-size: .85rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1rem;
+    color: rgb(240, 240, 240);
+}
+
+
+/*-------------------------horizontal lines-----------------------------*/
+
+.first-line{
+    height: 4px;
+    width: 100%;
+    margin: 0 auto 3px;
+    border-width:0;
+    background-color: rgb(62, 70, 100);
+    color: rgb(62, 70, 100);
+    border-style: solid;
+    }
+
+.second-line{
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+    border-width:0;
+    background-color: rgb(62, 70, 100);
+    color: rgb(62, 70, 100);
+    border-style: solid;
+}
+
+/*-------------------------contact information-----------------------------*/
+
+
+legend{
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 1.5rem 0 1.5rem;
+    color: rgb(62, 70, 100);
+}
+
+label, h3{
+    display: inline-block;
+    font-size: .85rem;
+    font-weight: 300;
+    text-align: left;
+    padding: .5rem 0 .5rem;
+    color: rgb(62, 70, 100);
+}
+
+label:nth-of-type(1){
+    padding-top: 0;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 14px;
+    margin: 0 auto .5rem;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+select{
+    -moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+}
+
+input:focus{
+    background-color:  rgb(255, 255, 255);
+    border: 2px solid rgb(62, 70, 100);
+    transition: .4s;
+}
+
+input[name*="user_fullname"]::placeholder, input[name*="user_email"]::placeholder{
+    color: rgb(179, 179, 184);
+    font-style: italic;
+    font-weight: 300;
+    font-size: .8rem;
+    padding-right: .5rem;
+    text-align: right;
+}
+
+input::placeholder, textarea::placeholder{
+   color: rgb(179, 179, 184);
+}
+
+input[name*="user_zip"]{
+    display: block;
+    width: 50%;
+    margin: 0 0 1.5rem;
+}
+
+input[name*="user_newsletter_news"], input[name*="user_css_news"], input[name*="user_javascript_news"], input[name*="user_html_format"], input[name*="user_plain_text_format"]{
+    display: inline;
+    padding: 0;
+    margin-bottom: 0;
+    margin-right: .5rem;
+    width: 1.5rem;
+    vertical-align: middle;
+}
+
+.newsletter_type, .newsletter_format{
+    margin: 0 0 0 .3rem;
+}
+
+.checkboxes{
+    margin: .5rem 0 1rem;
+}
+
+.checkboxes label {
+    display: block;
+  }
+  .checkboxes input {
+    vertical-align: middle;
+  }
+  .checkboxes label span {
+    vertical-align: middle;
+  }
+  
+
+select{
+    color: rgb(179, 179, 184);
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+textarea{
+    display: block;
+    resize: none;
+    margin: .5rem 0 1.5rem 0;
+}
+
+form{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+/* button style */
+
+.submit{
+    width: 100%;
+    color: aliceblue;
+    background-color: rgb(97, 194, 186);
+    padding: 1.25rem 1rem;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* footer */
+
+footer > p{
+    font-size: .75rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    color: rgb(164, 162, 182);
+    font-style: italic;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 768px){
+    form{
+        width: 55vw;
+    }
+
+    legend{
+        padding-top: 2.25rem;
+    }
+
+    .newsletter-p {
+        font-size: .78rem;
+       
+    }
+
+    .bigger-screen{
+        display: flex;
+        margin-bottom: .5rem;
+    }
+
+    .bigger-screen:last-of-type{
+        margin-bottom: 2rem;
+    }
+    label{
+        text-align: left;
+        margin: auto 0;
+        width: 200px;
+        font-weight: 400;
+    }
+    input{
+        padding: 10px;
+        font-size: 90%;
+    }
+    input[name*="user_zip"] {
+        margin: 0  0 .5rem;
+        width: 150px;
+    }
+
+    .zip-container{
+        display: flex;
+        width: 100%;
+    }
+    label[for=zip]{
+        width: 200px;
+    }
+}
+
+/* general selector */
+
+.line-height{
+    line-height: 1.5rem;
+    text-align: start;
+    width: 50vw;
+}
